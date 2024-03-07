@@ -91,23 +91,18 @@ function Form() {
       onSubmit={handleSubmit}
     >
       <div className={styles.row}>
-        <label htmlFor="cityName">City name</label>
+        <label htmlFor="cityName">Location</label>
         <input
           id="cityName"
           onChange={(e) => setCityName(e.target.value)}
-          value={cityName}
+          // value={cityName}
         />
-        <span className={styles.flag}>{emoji}</span>
+        {/* <span className={styles.flag}>{emoji}</span> */}
       </div>
 
       <div className={styles.row}>
-        <label htmlFor="date">When did you go to {cityName}?</label>
-        {/* <input
-          id="date"
-          onChange={(e) => setDate(e.target.value)}
-          value={date}
-        /> */}
-
+        {/* <label htmlFor="date">When did you go to {cityName}?</label> */}
+        <label htmlFor="date">Date</label>
         <DatePicker
           onChange={(date) => setDate(date)}
           selected={date}
@@ -116,7 +111,7 @@ function Form() {
       </div>
 
       <div className={styles.row}>
-        <label htmlFor="notes">Notes about your trip to {cityName}</label>
+        <label htmlFor="notes">Remarks about your reported waste</label>
         <textarea
           id="notes"
           onChange={(e) => setNotes(e.target.value)}

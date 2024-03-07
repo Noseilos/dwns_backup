@@ -1,0 +1,10 @@
+.link,
+.link:hover {
+  color: var(--color-dark--2);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.link:hover {
+  color: var(--color-dark--3);
+}

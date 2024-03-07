@@ -740,8 +740,8 @@ html {
   font-weight: 400;
 }
 
-.user-view {
-  background-color: #fff;
+.user_view {
+  background-color: #1a1d1f;
   max-width: 120rem;
   margin: 0 auto;
   min-height: 100vh;
@@ -752,8 +752,9 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 6rem;
 }
-.user-view__menu {
+.user_view__menu {
   -webkit-box-flex: 32rem;
   -ms-flex: 32rem 0 0px;
   flex: 32rem 0 0;
@@ -767,13 +768,13 @@ html {
   background-image: linear-gradient(to right bottom, #7dd56f, #28b487);
   padding: 4rem 0;
 }
-.user-view__content {
+.user_view__content {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   padding: 7rem 0;
 }
-.user-view__form-container {
+.user_view__form_container {
   max-width: 68rem;
   margin: 0 auto;
   padding: 0 8rem;
@@ -996,25 +997,25 @@ html {
   margin-right: 1rem;
 }
 
-.side-nav {
+.side_nav {
   list-style: none;
 }
-.side-nav li {
+.side_nav li {
   margin: 1rem 0;
   border-left: 0 solid #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.side-nav--active,
-.side-nav li:hover {
+.side_nav__active,
+.side_nav li:hover {
   border-left: 4px solid #fff !important;
 }
-.side-nav--active a {
+.side_nav__active a {
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px);
 }
-.side-nav a:link,
-.side-nav a:visited {
+.side_nav a:link,
+.side_nav a:visited {
   padding: 1rem 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1030,22 +1031,22 @@ html {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.side-nav a:hover,
-.side-nav a:active {
+.side_nav a:hover,
+.side_nav a:active {
   -webkit-transform: translateX(3px);
   transform: translateX(3px);
 }
-.side-nav svg {
+.side_nav svg {
   height: 1.9rem;
   width: 1.9rem;
   fill: #f7f7f7;
   margin-right: 2rem;
 }
 
-.admin-nav {
+.admin_nav {
   margin-top: 5.5rem;
 }
-.admin-nav__heading {
+.admin_nav__heading {
   margin: 0 5rem 1.5rem 4rem;
   padding-bottom: 3px;
   font-size: 1.2rem;
@@ -1259,7 +1260,7 @@ html {
   margin-bottom: 0.75rem;
 }
 
-.form__photo-upload {
+.form__photo_upload {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1269,7 +1270,7 @@ html {
   font-size: 1.6rem;
 }
 
-.form__user-photo {
+.form__user_photo {
   height: 7.5rem;
   width: 7.5rem;
   border-radius: 50%;

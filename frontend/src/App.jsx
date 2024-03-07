@@ -16,6 +16,7 @@ import News from "./pages/News";
 import Footer from "./components/Footer";
 import Register from "./pages/Auth/Register";
 import Overview from "./components/Admin/Overview";
+import Account from "./pages/Account";
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
 
               {/* Converting to JSX */}
               <Route path="overview" element={<Overview />} />
+              <Route path="me" element={<Account />} />
+
 
               <Route
                 path="app"
