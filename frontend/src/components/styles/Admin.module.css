@@ -780,7 +780,7 @@ html {
 }
 
 .footer {
-  background-color: #f7f7f7;
+  background-color: var(--color-dark--1);
   padding: 6rem 4rem 3rem 4rem;
   font-size: 1.4rem;
   display: grid;
@@ -820,7 +820,7 @@ html {
   margin-left: 1.5rem;
 }
 .footer__nav a {
-  color: #777;
+  color: #fff;
   text-decoration: none !important;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;

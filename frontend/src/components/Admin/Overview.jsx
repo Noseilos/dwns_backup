@@ -61,10 +61,13 @@ function Overview() {
                     <use xlinkHref="/img/icons.svg#icon-calendar"></use>
                   </svg>
                   <span>
-                    {report.startDates?.[0]?.toLocaleString("en-us", {
-                      month: "long",
-                      year: "numeric",
-                    })}
+                    {report.startDates?.[0]
+                      ? new Date(report.startDates[0]).toLocaleString("en-us", {
+                          month: "long",
+                          day: "numeric",
+                          year: "numeric",
+                        })
+                      : ""}
                   </span>
                 </div>
                 <div className={styles.card__data}>

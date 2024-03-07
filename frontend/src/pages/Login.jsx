@@ -72,12 +72,13 @@ const Login = () => {
           <form className={styles.form} onSubmit={submitHandler}>
             <div className={styles.row}>
             <Divider>LOGIN</Divider>
-              <label htmlFor="email">Email address</label>
+              <label htmlFor="email">Email Address</label>
               <input
                 type="email"
                 id="email"
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
+                placeholder="email@example.com"
               />
             </div>
 
@@ -88,13 +89,14 @@ const Login = () => {
                 id="password"
                 onChange={(e) => setPassword(e.target.value)}
                 value={password}
+                placeholder="••••••••"
               />
             </div>
 
               <Button type="primary">Login</Button>
             <div className={styles.lnk}>
               <label ><Link className={styles.link}>Forgot Password?</Link></label>
-              <label ><Link className={styles.link}>Don't have an account?</Link></label>
+              <label ><Link className={styles.link} to="/register">Don't have an account?</Link></label>
 
               </div>
 

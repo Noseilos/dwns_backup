@@ -22,7 +22,6 @@ function News() {
     </section>
  
   </main>
-  <Footer/>
   </>
 
   )
