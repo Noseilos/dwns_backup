@@ -1,0 +1,45 @@
+extends base
+
+block content
+  main.main
+    .card-container
+    
+      each report in reports
+        .card
+          .card__header
+            .card__picture
+              .card__picture-overlay &nbsp;
+              img.card__picture-img(src=`/img/reports/${report.imageCover}`, alt=`${report.name}`)
+            h3.heading-tertirary
+              span= report.name
+
+          .card__details
+            h4.card__sub-heading= `${report.difficulty} ${report.duration}-day report`
+            p.card__text= report.summary
+            .card__data
+              svg.card__icon
+                use(xlink:href='/img/icons.svg#icon-map-pin')
+              span= report.startLocation.description
+            .card__data
+              svg.card__icon
+                use(xlink:href='/img/icons.svg#icon-calendar')
+              span= report.startDates[0].toLocaleString('en-us', {month: 'long', year: 'numeric'})
+            .card__data
+              svg.card__icon
+                use(xlink:href='/img/icons.svg#icon-flag')
+              span= `${report.locations.length} stops`
+            .card__data
+              svg.card__icon
+                use(xlink:href='/img/icons.svg#icon-user')
+              span= `${report.maxGroupSize} people`
+
+          .card__footer
+            p
+              span.card__footer-value= `$${report.price}`
+              | 
+              span.card__footer-text per person
+            p.card__ratings
+              span.card__footer-value= report.ratingsAverage
+              | 
+              span.card__footer-text= `rating (${report.ratingsQuantity})`
+            a.btn.btn--green.btn--small(href=`/report/${report.slug}`) Details

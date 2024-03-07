@@ -1,0 +1,18 @@
+{
+    "posts": [
+        {
+    "user": "John",
+    "title": "Waste Trove!",
+    "content": "Contentssss",
+    "createdAt": "2027-10-31T15:59:59.138Z",
+    "id": "329520967907"
+},
+{
+    "user": "Mark",
+    "title": "Municipal Wastes Here!",
+    "content": "ANG KALAT LODS",
+    "createdAt": "2030-10-31T15:59:59.138Z",
+    "id": "34290357788283"
+}
+]
+    }
