@@ -117,6 +117,7 @@ const Account = () => {
                   className={styles.form__input}
                   type="text"
                   value={user.name}
+                  style={{ color:"black" }}
                   required
                   name="name"
                 />
@@ -129,6 +130,7 @@ const Account = () => {
                   id="email"
                   className={styles.form__input}
                   type="email"
+                  style={{ color:"black" }}
                   value={user.email}
                   required
                   name="email"
@@ -149,7 +151,7 @@ const Account = () => {
                   id="photo"
                   name="photo"
                 />
-                <label htmlFor="photo">Choose new photo</label>
+                <label htmlFor="photo">Choose New Photo</label>
               </div>
               <div className={`${styles.form__group} right`}>
                 <button
